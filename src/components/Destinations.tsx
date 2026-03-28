@@ -1,3 +1,5 @@
+import FloatingBubblesBackground from './FloatingBubblesBackground';
+
 export default function Destinations() {
   const destinations = [
     {
@@ -33,14 +35,18 @@ export default function Destinations() {
   ];
 
   return (
-    <section id="destinations" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="destinations" className="relative overflow-hidden py-20 bg-gray-50">
+      <FloatingBubblesBackground />
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Popular Destinations
+          <p className="text-accent font-semibold tracking-wide uppercase text-sm mb-3">
+            Chosen for you
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-gray-900 mb-4">
+            Popular destinations
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Discover our handpicked selection of the world's most captivating places
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+            Select inspiring places that align with your journey—blessed routes and worry-free planning.
           </p>
         </div>
 

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-2xl font-bold text-emerald-400 mb-4">Haya Travels</h3>
+            <h3 className="font-display text-2xl font-semibold text-emerald-400 mb-4">Haya Travels</h3>
             <p className="text-gray-400 leading-relaxed mb-4">
               Your trusted partner for unforgettable journeys. We specialize in Hajj, Umrah, and worldwide travel experiences.
             </p>
@@ -70,7 +70,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
-            <p>Copyright 2025 Haya Travels. All Rights Reserved.</p>
+            <p>Copyright 2026 Haya Travels. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-emerald-400 transition">Privacy Policy</a>
               <a href="#" className="hover:text-emerald-400 transition">Terms of Service</a>

@@ -1,3 +1,5 @@
+import FloatingBubblesBackground from './FloatingBubblesBackground';
+
 export default function Gallery() {
   const images = [
     'https://images.pexels.com/photos/6180209/pexels-photo-6180209.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -9,14 +11,18 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="gallery" className="relative overflow-hidden py-20 bg-gray-50">
+      <FloatingBubblesBackground />
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Recent Gallery
+          <p className="text-accent font-semibold tracking-wide uppercase text-sm mb-3">
+            Spiritual journey gallery
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-gray-900 mb-4">
+            Moments of devotion
           </h2>
-          <p className="text-gray-600 text-lg">
-            Moments captured from our incredible journeys
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+            Peace and purpose through the lens of our pilgrims—highlights from blessed journeys.
           </p>
         </div>
 

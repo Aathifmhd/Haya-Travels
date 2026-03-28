@@ -1,4 +1,5 @@
 import { Quote } from 'lucide-react';
+import FloatingBubblesBackground from './FloatingBubblesBackground';
 
 export default function Testimonials() {
   const testimonials = [
@@ -29,14 +30,18 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="testimonials" className="relative overflow-hidden py-20 bg-white">
+      <FloatingBubblesBackground />
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            What Clients Say About Us
+          <p className="text-accent font-semibold tracking-wide uppercase text-sm mb-3">
+            Trusted by families &amp; professionals
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-gray-900 mb-4">
+            Voices of confidence
           </h2>
-          <p className="text-gray-600 text-lg">
-            Real experiences from our satisfied travelers
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+            Real experiences from pilgrims and travellers who chose Haya Travels.
           </p>
         </div>
 
@@ -56,7 +61,7 @@ export default function Testimonials() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">{testimonial.name}</h4>
-                  <p className="text-gray-500 text-sm">Verified Customer</p>
+                  <p className="text-gray-500 text-sm">Verified pilgrim</p>
                 </div>
               </div>
             </div>
